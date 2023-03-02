@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.9)), url(blackodes_3_original.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 70px;
+  transform: translate(50%, -50%);
+}
+.container .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 50px;
+  background: linear-gradient(rgb(225, 39, 39), rgb(52, 9, 16));
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.container .toggle .toggle-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+.container .toggle .toggle-btn img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0.3px 0.3px 10px rgba(35, 19, 19, 0.9);
+}
+
+.container .toggle.active {
+  background: linear-gradient(rgb(9, 194, 9), rgb(55, 3, 55));
+}
+
+.container .toggle.active .toggle-btn {
+  left: 75px;
+}/*# sourceMappingURL=styles.css.map */
